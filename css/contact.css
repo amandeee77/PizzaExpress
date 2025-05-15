@@ -1,0 +1,72 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Page Background */
+body {
+    background-color: #5A1F00;
+    color: #FFF5EE;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact__container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+
+.contact__info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+.button {
+    background-color: #FF4500;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FFD700;
+    color: #8B0000;
+}
+
+/* Footer */
+.footer__container {
+    background-color: #8B0000;
+    padding: 20px;
+}
