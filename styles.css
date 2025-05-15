@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 80px;
     background-color: #8B0000;
     padding: 10px 50px;
     height: 80px;
@@ -24,9 +25,20 @@ body {
     z-index: 999;
 }
 
+.navbar__container {
+    display: flex;
+    justify-content: space-between; /* Spreads out items */
+    align-items: center; /* Keeps them aligned vertically */
+    width: 100%;
+    padding: 10px 50px;
+}
+
 .navbar__menu {
     display: flex;
+    justify-content: space-evenly; /* Spaces items evenly */
     align-items: center;
+    list-style: none;
+    width: 100%;
 }
 
 .navbar__links:hover {
