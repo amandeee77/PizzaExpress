@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Page Background */
+body {
+    background-color: #5A1F00; /* Softer deep red */
+    color: #FFF5EE;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #8B0000;
+}
+
+/* Navbar Menu */
+.navbar__menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar__item {
+    padding: 10px;
+}
+
+/* Order Page Layout */
+.order__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Left Side: Menu Preview */
+.order-menu {
+    background-color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.order-menu img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Right Side: Order Form */
+.order-form {
+    background-color: #FFF5EE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Form Inputs */
+.form__group {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Order Button */
+.button {
+    background-color: #FF4500;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #FFD700;
+    color: #8B0000;
+}
+
+/* Footer */
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #8B0000;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.footer__logo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FFD700;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .order__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+}
